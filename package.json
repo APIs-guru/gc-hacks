@@ -1,6 +1,6 @@
 {
   "name": "gc-hacks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Collection of ugly hacks, for JS garbage collector. Use only as a last resort.",
   "main": "index.js",
   "repository": {

@@ -20,7 +20,7 @@ exports.forceStringCopy = function (str) {
 
 exports.recreateReturnObjectAndGcCollect = function (fn) {
   return function wrapper() {
-    var obj = exports.recreateObject(fn.apply(this, arguments));
+    var obj = exports.recreateValue(fn.apply(this, arguments));
     exports.gcCollect();
     return obj;
   }
