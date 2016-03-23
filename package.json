@@ -1,6 +1,6 @@
 {
   "name": "gc-hacks",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Collection of ugly hacks, for JS garbage collector. Use only as a last resort.",
   "main": "index.js",
   "repository": {
@@ -16,5 +16,5 @@
   "bugs": {
     "url": "https://github.com/APIs-guru/gc-hacks/issues"
   },
-  "homepage": "https://github.com/lucybot/api-spec-converter"
+  "homepage": "https://github.com/APIs-guru/gc-hacks/"
 }
