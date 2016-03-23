@@ -1,0 +1,20 @@
+{
+  "name": "gc-hacks",
+  "version": "1.0.0",
+  "description": "Collection of ugly hacks, for JS garbage collector. Use only as a last resort.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/APIs-guru/gc-hacks"
+  },
+  "keywords": [
+    "GC",
+    "garbadge",
+    "collector"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/APIs-guru/gc-hacks/issues"
+  },
+  "homepage": "https://github.com/lucybot/api-spec-converter"
+}
