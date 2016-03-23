@@ -10,7 +10,7 @@ Big thanks to [@adamhooper](https://github.com/adamhooper) for code suggestion a
 ## Installation
 
 ```bash
-npm install -g api-spec-converter
+npm install gc-hacks
 ```
 
 ## Usage
