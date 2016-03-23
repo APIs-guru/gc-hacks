@@ -4,7 +4,7 @@ Collection of ugly hacks, for JS garbage collector. __Use only as a last resort_
 Code based on disscussion from [this](https://github.com/cheeriojs/cheerio/issues/263) thread.
 And I higly recomend to read it before using this module.
 
-Big thanks to @adamhooper for code suggestion and great advice:
+Big thanks to [@adamhooper](https://github.com/adamhooper) for code suggestion and great advice:
 > And don't use these workarounds normally. Only use them when you have identified a problem and you are certain this fixes the problem, and you have commented why it fixes the problem.
 
 ## Installation
@@ -18,15 +18,14 @@ npm install -g api-spec-converter
 ```js
 var gcHacks = require('gc-hacks');
 
-var veryLongString = 'xxxxxxxxxxxxxxxxxxxxx....';
+var veryLongString = 'xxxxxxxxxxxxxxxxxxxxx...';
 var partString = veryLongString.substr(1);
 
 // Now 'veryLongString' stuck in memory until `partString` exist
 // or we can do force 'partString' to be copied.
 partString = forceStringCopy(partString);
 
-// But what if string inside object or array
-// Like this:
+// But what if string inside object or array, like this:
 var array = [veryLongString.substr(1)];
 
 // Just use 'recreateObject' it work with any JSON-compatible value
@@ -42,7 +41,7 @@ var hackedFunction = gcHacks.recreateReturnObjectAndGcCollect(someFunction);
 
 // Or use it with promises:
 somePromise
-  .then(recreateReturnObjectAndGcCollect(function (arg1, arg2) {
+  .then(gcHacks.recreateReturnObjectAndGcCollect(function (arg1, arg2) {
     return [veryLongString.substr(1)];
   })
 ```
